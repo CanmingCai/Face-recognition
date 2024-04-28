@@ -1,2 +1,2 @@
 # Face recognition
- tensorflow and face_recognition
+ Using TensorFlow and the face_recognition library for face recognition.
