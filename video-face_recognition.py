@@ -40,7 +40,7 @@ known_face_encodings = []
 
 # Load sample pictures and learn how to recognize them
 for name in known_face_names:
-    image_path = f"Imagenes-Caras/{name}/01.png"
+    image_path = f"Data/{name}/01.png"
     image = face_recognition.load_image_file(image_path)
     face_encoding = face_recognition.face_encodings(image)[0]
     known_face_encodings.append(face_encoding)

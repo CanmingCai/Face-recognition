@@ -26,6 +26,7 @@ train_generator = train_data_gen.flow_from_directory(
     class_mode='categorical')
 
 model = tf.keras.models.load_model("face_recognition_model")
+model.summary()
 
 def predict_face(img):
     img_array = tf.keras.preprocessing.image.img_to_array(img)
